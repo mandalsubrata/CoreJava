@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity {
         man.showHand();
         man.test();
 
-     //   ThreadClass thread = new ThreadClass();
-     //   thread.showNaturalNumber();
+        ThreadClass thread = new ThreadClass();
+        thread.showNaturalNumber();
 
-     //   ConsumerProducer consumerProducer = new ConsumerProducer();
-     //   consumerProducer.ConsumeAndProduce();
+        ConsumerProducer consumerProducer = new ConsumerProducer();
+        consumerProducer.ConsumeAndProduce();
 
-     //   CProducerThreadExecutor cProducerThreadExecutor = new CProducerThreadExecutor();
-     //   cProducerThreadExecutor.runExecutorProgram();
+        CProducerThreadExecutor cProducerThreadExecutor = new CProducerThreadExecutor();
+        cProducerThreadExecutor.runExecutorProgram();
 
         OptionalConcept optionalConcept = new OptionalConcept();
         optionalConcept.showOptionalFunction();
