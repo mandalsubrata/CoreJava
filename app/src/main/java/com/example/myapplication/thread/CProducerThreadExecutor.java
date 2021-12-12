@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.thread;
 
 import android.util.Log;
 
