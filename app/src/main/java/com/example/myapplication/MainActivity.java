@@ -1,12 +1,15 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.myapplication.integer.IntegerClass;
+import com.example.myapplication.string.StringPrograms;
 import com.example.myapplication.thread.ConsumerProducer;
 import com.example.myapplication.thread.ThreadClass;
+import com.example.myapplication.thread.cyclicbarrier.CyclicBarrierDemo;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "mandal_MainActivity";
@@ -21,5 +24,18 @@ public class MainActivity extends AppCompatActivity {
 
         ConsumerProducer consumerProducer = new ConsumerProducer();
         consumerProducer.ConsumeAndProduce();
+
+        StringPrograms stringPrograms = new StringPrograms();
+        int totalCountOfChar = stringPrograms.countCharInString();
+        Log.i(TAG, "totalCountOfChar: " + totalCountOfChar);
+
+        IntegerClass integerClass = new IntegerClass();
+        integerClass.printAllDigitsInInteger(1728393749);
+
+        CyclicBarrierDemo cyclicBarrierDemo = new CyclicBarrierDemo();
+        cyclicBarrierDemo.showNaturalNumbers();
+
+        MethodOverloading methodOverloading = new MethodOverloading();
+        methodOverloading.runOverloadingClassMethods();
     }
 }
